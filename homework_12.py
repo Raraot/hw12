@@ -103,7 +103,7 @@ class AddressBook(UserDict, FieldHandler):
         if self.data == {}:
             return "*** Your phone book is empty ***"
         start = 0
-        end = 4
+        end = 10
         count = 0
         dic_list = []
         for k, v in self.data.items():
@@ -113,7 +113,7 @@ class AddressBook(UserDict, FieldHandler):
             count += 1
             print(f'\nPage {count} phone book:\n\n{result}')
             start = end
-            end = end + 4
+            end = end + 10
             if start < len(dic_list):
                 print('\nFor the next page phone book - type "next"\nFor the exit from phone book - type "exit"')
             else:
