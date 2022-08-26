@@ -97,7 +97,6 @@ class AddressBook(UserDict, FieldHandler):
         else:
             print("*** Nothing found ***")
 
-
     def show_all(self):
         if self.data == {}:
             return "*** Your phone book is empty ***"
