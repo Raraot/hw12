@@ -4,7 +4,6 @@ from datetime import datetime
 from corrector import *
 import csv
 
-DICT = {}
 # ДЕКОРАТОРИ із ДЗ-9
 def welcome(func):                                                        # декоратор оформлення привітання
     def inner(*args, **kwargs):
@@ -107,7 +106,7 @@ class AddressBook(UserDict, FieldHandler):
         count = 0
         dic_list = []
         for k, v in self.data.items():
-            dic_list.append(str(k)+" :    "+str(v))
+            dic_list.append(str(k)+" :\t\t"+str(v))
         for i in dic_list:
             result = "\n".join(dic_list[start:end])
             count += 1
