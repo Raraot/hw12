@@ -97,11 +97,6 @@ class AddressBook(UserDict, FieldHandler):
             print(result)
         else:
             print("*** Nothing found ***")
-        
-            
-
-
-
 
 
     def show_all(self):
