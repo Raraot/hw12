@@ -66,7 +66,7 @@ class FieldHandler:
 
 class AddressBook(UserDict, FieldHandler):
     def __init__(self):
-        self.filename = "/Users/suprunetsvladymyr/Desktop/Projects/py_test/lesson12/hw12/all_adressbook.csv"
+        self.filename = "all_adressbook.csv"
         self.data = {}
 
     def open_csv(self):
