@@ -111,7 +111,7 @@ class AddressBook(UserDict, FieldHandler):
         for i in dic_list:
             result = "\n".join(dic_list[start:end])
             count += 1
-            print(f'\nPage {count} phone book:\n\n{result}')
+            print(f'\n Page {count} phone book: \n\n{result}')
             start = end
             end = end + 10
             if start < len(dic_list):
@@ -161,6 +161,7 @@ class AddressBook(UserDict, FieldHandler):
                 left = 365 + left
             print(f"{left} days left until the birthday of the contact: {name}")
 
+
 class Name(FieldHandler):
     def __init__(self, name):
         self.name = name
@@ -206,6 +207,3 @@ if __name__ == '__main__':
     record = Record()
     fieldhandler = FieldHandler()
     main()
-
-
-
